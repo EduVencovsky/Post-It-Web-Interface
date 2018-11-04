@@ -1,0 +1,24 @@
+.postIt {
+	background-color: red;
+	position: absolute;
+	border-radius: 5%;
+}
+
+.postItDeleteButton {
+	float: right;
+}
+
+.postItTextArea {
+	background: transparent;
+	margin-left: 2%;
+	width: 96%;
+	height: 85%;
+	border: none;
+	outline: 0px !important;
+	resize: none;
+	overflow: hidden;
+}
+
+.postItDragDiv {
+	border-top-left-radius: 20%;
+}

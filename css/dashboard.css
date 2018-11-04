@@ -1,0 +1,90 @@
+#leftSide {
+	background-color: #27BEC5;
+	height: 500px;
+	min-width: 5%;
+	display: flex; 
+	float: left;
+}
+
+#menuBar {
+	list-style-type: none;
+	display: inline-block;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	border-style: solid;
+	border-color: #FF7001;
+}
+
+#menuBar li {
+	padding: 10px 0px;
+}
+
+i {
+	color: #FF7001;
+}
+
+#menuBar li:hover {
+	background-color: #FF7001;
+}
+
+a li:hover > i {
+	color: #27BEC5;
+}
+
+a:hover > i {
+	color: #27BEC5;
+}
+
+#mainSide {
+	background-color: #FF7001;
+	height: 500px;
+	max-width: 95%;
+	min-width: 10%;
+	display: flex; 
+}
+
+#mainContent {
+	background-color: #E6E6E6;
+	position: relative;
+	/*margin: 20px;*/
+	/*padding: 5%;*/
+	width: 100%;
+}
+
+#registerMainInput {
+	width: 80%;
+	height: 50px;
+	font-size: 40px;
+	outline: none;
+	text-align: center;
+	/*border-top: 2px solid #27BEC5;
+	border-right: 2px solid #27BEC5;
+	border-bottom: 2px solid #27BEC5;
+	border-left: 2px solid #27BEC5;*/
+}
+
+#registerMainInput:focus {
+	/*border-top: 2px solid #FF7001;
+	border-right: 2px solid #FF7001;
+	border-bottom: 2px solid #FF7001;
+	border-left: 2px solid #FF7001;*/
+}
+
+#leftArrow{
+	float: left;
+	margin: 2% 10%;
+	display: none;
+}
+
+#rightArrow{
+	float: right;
+	margin: 2% 10%;
+}
+
+#registerTitleDiv {
+	font-size: 40px;
+	text-align: center;
+	font-family: 'Merienda', cursive;
+}
