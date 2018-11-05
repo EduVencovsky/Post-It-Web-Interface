@@ -61,7 +61,6 @@ function createPostIt(){
 				.addClass("postIt")
 				.width(windowWidth / 5 + "px")
 				.height(windowHeight / 5 + "px")
-				// .height("20%")
 				.offset({left: windowWidth / 2, top: windowHeight / 2});
 
 	let postItDeleteButton = $(document.createElement("button"))
