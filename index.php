@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div id="mainContent">
-		
+		<div id="addPostIt"></div>
 	</div>	
 </body>
 	<script type="text/javascript">

@@ -16,21 +16,21 @@ $(document).ready(function() {
 
         	newX = mouseX + offsetX;
 
-	        if ( mouseX + onsetX > windowWidth ) {
+	        if ( mouseX + onsetX >= windowWidth ) {
 	          newX = windowWidth - currentPostIt.width();
 	        } 
 
-	        if ( mouseX + offsetX < 0 ) {
+	        if ( mouseX + offsetX <= 0 ) {
 	          newX = 0;
 	        }
 	   
 	        newY = mouseY + offsetY;
 
-	        if ( mouseY + onsetY > windowHeight ) {
+	        if ( mouseY + onsetY >= windowHeight ) {
 	          newY = windowHeight - currentPostIt.height();
 	        } 
 	        
-	        if ( mouseY + offsetY < 0 ) {
+	        if ( mouseY + offsetY <= 0 ) {
 	          newY = 0;
 	        }
 
@@ -47,7 +47,7 @@ $(document).ready(function() {
 		windowHeight = $(window).height();
 	});
 
-	$("#mainContent").click(function(){
+	$("#addPostIt").click(function(){
 		if(postItCount < maxPostIt){
 			createPostIt();
 		}
@@ -61,7 +61,8 @@ function createPostIt(){
 				.addClass("postIt")
 				.width(windowWidth / 5 + "px")
 				.height(windowHeight / 5 + "px")
-				.offset({left: mouseX, top: mouseY});
+				// .height("20%")
+				.offset({left: windowWidth / 2, top: windowHeight / 2});
 
 	let postItDeleteButton = $(document.createElement("button"))
 							.addClass("postItDeleteButton")
@@ -106,7 +107,7 @@ function deletePostIt(p){
 }
 
 function checkTextAreaScrollBar(e){
-	
+
     while(e.clientHeight < e.scrollHeight){
 
     	e.value = e.value.slice(0, -1);

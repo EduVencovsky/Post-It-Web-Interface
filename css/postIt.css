@@ -22,3 +22,12 @@
 .postItDragDiv {
 	border-top-left-radius: 20%;
 }
+
+#addPostIt {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	background-color: green;
+}
